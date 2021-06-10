@@ -41,6 +41,7 @@
         <appframeworkVersion>2.4</appframeworkVersion>
         <appuiVersion>1.6</appuiVersion>
         <calculationVersion>1.1</calculationVersion>
+        <htmlwidgetsVersion>1.7.2</htmlwidgetsVersion>
         <luceneVersion>6.6.0</luceneVersion>
         <metadatadeployVersion>1.6</metadatadeployVersion>
         <metadatamappingVersion>1.0.2</metadatamappingVersion>
@@ -113,6 +114,20 @@
                 <groupId>org.openmrs.module</groupId>
                 <artifactId>calculation-api</artifactId>
                 <version>${calculationVersion}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>htmlwidgets-api</artifactId>
+                <version>${htmlwidgetsVersion}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.openmrs.module</groupId>
+                <artifactId>htmlwidgets-omod</artifactId>
+                <version>${htmlwidgetsVersion}</version>
                 <scope>provided</scope>
             </dependency>
 

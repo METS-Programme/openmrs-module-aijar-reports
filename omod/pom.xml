@@ -84,7 +84,13 @@
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>calculation-api</artifactId>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>htmlwidgets-omod</artifactId>
+			<version>${htmlwidgetsVersion}</version>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>metadatadeploy-api</artifactId>
