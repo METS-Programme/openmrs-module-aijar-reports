@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  *
  */
 @Component("commonReportMetadata")
-public class CommonReportMetadata extends Metadata {
+public class CommonReportMetadata extends ReportMetadata {
 
 	public PatientIdentifierType getARTClinicNumber() {
 		return getPatientIdentifierType("e1731641-30ab-102d-86b0-7a5022ba4115");

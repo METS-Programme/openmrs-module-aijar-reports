@@ -324,6 +324,17 @@ public class Metadata {
     }
 
     public static class Program {
-
+        public final static String HIV_PROGRAM = "18c6d4aa-0a36-11e7-8dbb-507b9dc4c741";
     }
+
+        public static class ProgramWorkflow {
+                public final static String HIV_PROGRAM_WORKFLOW_REGIMEN_LINES = "4c30d724-dbcc-42db-ba9b-a9b9d2aadc00";
+        }
+
+        public static class ProgramState {
+                public final static String HIV_PROGRAM_STATE_UNKNOWN = "ec890f83-fd47-4406-9c86-8f779b38f6d6";
+                public final static String HIV_PROGRAM_STATE_FIRST_LINE_REGIMEN = "ab6d1f1d-fcf6-4255-8b6f-2bf8959ad8f2";
+                public final static String HIV_PROGRAM_STATE_SECOND_LINE_REGIMEN = "9a42a3ad-d8a4-4f2e-9fa0-04d5f2e6436e";
+                public final static String HIV_PROGRAM_STATE_THIRD_LINE_REGIMEN = "5d2d0e7e-69a6-408a-b5ce-8d93fb72bc21";
+        }
 }

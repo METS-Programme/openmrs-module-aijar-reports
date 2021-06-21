@@ -13,7 +13,7 @@ import java.util.List;
  * Metadata definitions for the HIV related reporting
  */
 @Component("tbMetadata")
-public class TBMetadata extends Metadata {
+public class TBMetadata extends ReportMetadata {
 
 
     public Concept getUnitTBNo() {

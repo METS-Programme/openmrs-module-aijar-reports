@@ -31,7 +31,7 @@ import org.openmrs.RelationshipType;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.reporting.common.ObjectUtil;
 
-public abstract class Metadata {
+public abstract class ReportMetadata {
 
 	protected final Log log = LogFactory.getLog(getClass());
 
