@@ -3,7 +3,10 @@ package org.openmrs.module.ugandaemrreports.metadata;
 import org.openmrs.Concept;
 import org.openmrs.EncounterType;
 import org.openmrs.PatientIdentifierType;
+import org.openmrs.Program;
 import org.openmrs.module.metadatadeploy.MetadataUtils;
+import org.openmrs.module.ugandaemrreports.library.CommonDimensionLibrary;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -15,6 +18,9 @@ import java.util.List;
  */
 @Component("hivMetadata")
 public class HIVMetadata extends Metadata {
+
+    @Autowired
+    CommonDimensionLibrary commonDimensionLibrary;
 
     public Concept getReturnVisitDate() {
         return getConcept("dcac04cf-30ab-102d-86b0-7a5022ba4115");
@@ -665,5 +671,21 @@ public class HIVMetadata extends Metadata {
         List<EncounterType> l = new ArrayList<EncounterType>();
         l.add(MetadataUtils.existing(EncounterType.class, "cd9a2698-206f-44f3-a888-f824544413b4"));
         return l;
+    }
+
+    public Program getFBIMProgram(){
+        return commonDimensionLibrary.getProgramByUuid("de5d54ae-c304-11e8-9ad0-529269fb1459");
+    }
+    public Program getFTRProgram(){
+        return commonDimensionLibrary.getProgramByUuid("de5d5896-c304-11e8-9ad0-529269fb1459");
+    }
+    public Program getFBGProgram(){
+        return commonDimensionLibrary.getProgramByUuid("de5d5b34-c304-11e8-9ad0-529269fb1459");
+    }
+    public Program getCDDPProgram(){
+        return commonDimensionLibrary.getProgramByUuid("de5d6034-c304-11e8-9ad0-529269fb1459");
+    }
+    public Program getCCLADProgram(){
+        return commonDimensionLibrary.getProgramByUuid("de5d5da0-c304-11e8-9ad0-529269fb1459");
     }
 }
